@@ -1,15 +1,9 @@
 # Hardhat Security
-
-- [Hardhat Security](#hardhat-security)
-- [What is an Audit?](#what-is-an-audit)
-- [Help your auditors!](#help-your-auditors)
-- [Process](#process)
-- [Resources](#resources)
-  - [Tools](#tools)
-  - [Games](#games)
-  - [Blogs](#blogs)
-  - [Audit Examples:](#audit-examples)
-  - [Articles](#articles)
+- [Tools](#tools)
+- [Games](#games)
+- [Blogs](#blogs)
+- [Audit Examples:](#audit-examples)
+- [Articles](#articles)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Quickstart](#quickstart)
@@ -18,48 +12,6 @@
   - [Echidna](#echidna)
 - [Linting](#linting)
 - [Formatting](#formatting)
-
-# What is an Audit?
-
-An audit is a security focused code review for looking for issues with your code. 
-
-# Help your auditors!
-
-When writing good code, you 100% need to follow these before sending you code to an audit.
-
-[Tweet from legendary security expert Tincho](https://twitter.com/tinchoabbate/status/1400170232904400897)
-
--   Add comments
-    -   This will help your auditors understand what you're doing.
--   Use [natspec](https://docs.soliditylang.org/en/v0.8.11/natspec-format.html)
-    -   Document your functions. DOCUMENT YOUR FUNCTIONS.
--   Test
-    -   If you don't have tests, and test coverage of all your functions and lines of code, you shouldn't go to audit. If your tests don't pass, don't go to audit.
--   Be ready to talk to your auditors
-    -   The more communication, the better.
--   Be prepared to give them plenty of time.
-    -   They literally pour themselves over your code.
-
-> "At this time, there are 0 good auditors that can get you an audit in under a week. If an auditor says they can do it in that time frame, they are either doing you a favor or they are shit. " - Patrick Collins, March 4th, 2022
-
-# Process
-
-An auditors process looks like this:
-
-1. Run tests
-2. Read specs/docs
-3. Run fast tools (like slither, linters, static analysis, etc)
-4. Manual Analysis
-5. Run slow tools (like echidna, manticore, symbolic execution, MythX)
-6. Discuss (and repeat steps as needed)
-7. Write report ([Example report](https://github.com/transmissions11/solmate/tree/main/audits))
-
-
-# Resources
-
-These are some of the best places to learn even MORE about security:
-
-PRs welcome to improve the list.
 
 ## Tools
 
