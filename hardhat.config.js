@@ -1,6 +1,5 @@
 require("@openzeppelin/hardhat-upgrades")
 require("@nomiclabs/hardhat-etherscan")
-require("@nomiclabs/hardhat-waffle")
 require("@nomiclabs/hardhat-ethers")
 require("@nomicfoundation/hardhat-toolbox")
 require("hardhat-contract-sizer")
@@ -33,6 +32,7 @@ module.exports = {
             //   url: MAINNET_RPC_URL
             // }
             chainId: 31337,
+            allowUnlimitedContractSize: true,
         },
         localhost: {
             chainId: 31337,
@@ -95,7 +95,13 @@ module.exports = {
     solidity: {
         compilers: [
             {
-                version: "0.8.7",
+                version: "0.8.18",
+                settings: {
+                    optimizer: {
+                        enabled: true, // Default: false
+                        runs: 200,
+                    },
+                },
             },
         ],
     },
