@@ -31,11 +31,11 @@ module.exports = {
             // forking: {
             //   url: MAINNET_RPC_URL
             // }
-            chainId: 31337,
+            chainId: 1337,
             allowUnlimitedContractSize: true,
         },
         localhost: {
-            chainId: 31337,
+            chainId: 1337,
         },
         sepolia: {
             url: SEPOLIA_RPC_URL,
