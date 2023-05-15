@@ -1,7 +1,6 @@
 {
   "name": "hardhat-security",
   "version": "1.0.0",
-  "description": "This is a Hardhat project with various security-focused scripts and tools. It includes dependencies such as Hardhat plugins, OpenZeppelin contracts, Chai for testing, and more.",
   "scripts": {
     "slither": "slither ./contracts --filter-paths node_modules --solc-remaps @=node_modules/@ --exclude naming-convention,external-function,low-level-calls",
     "toolbox": "docker run -it --rm -v %cd%:/src trailofbits/eth-security-toolbox",

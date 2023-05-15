@@ -1,4 +1,6 @@
 # Hardhat Security
+This is a repository focused on smart contract security. It includes a docker container with all the tools you need and a few example contracts to help you get started.
+
 - [Tools](#tools)
 - [Games](#games)
 - [Blogs](#blogs)
